@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiplication table</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="./multi.css">
+    <script defer src="./multi.js"></script>
+</head>
+
+<body>
+    <nav>
+        <span id="logo"><a href="../../index.html">ndriqa</a></span>
+    </nav>
+    <main>
+        <div id="row-col-nums">
+            <div id="rows">
+                <button onclick="row(1)">1</button>
+                <button onclick="row(2)">2</button>
+                <button onclick="row(3)">3</button>
+                <button onclick="row(4)">4</button>
+                <button onclick="row(5)">5</button>
+                <button onclick="row(6)">6</button>
+                <button onclick="row(7)">7</button>
+                <button onclick="row(8)">8</button>
+                <button onclick="row(9)">9</button>
+                <button onclick="row(10)">10</button>
+            </div>
+            <div id="cols">
+                <button onclick="col(1)">1</button>
+                <button onclick="col(2)">2</button>
+                <button onclick="col(3)">3</button>
+                <button onclick="col(4)">4</button>
+                <button onclick="col(5)">5</button>
+                <button onclick="col(6)">6</button>
+                <button onclick="col(7)">7</button>
+                <button onclick="col(8)">8</button>
+                <button onclick="col(9)">9</button>
+                <button onclick="col(10)">10</button>
+            </div>
+            <div id="nums"></div>
+            <button id="cepi" onclick="resetAll()">X</button>
+        </div>
+    </main>
+</body>
+
+</html>

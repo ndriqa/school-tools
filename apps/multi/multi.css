@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+:root {
+    --kotlin: #5533ff;
+    --my-black: #111;
+    --dark-grey: #303030;
+    --lred: #FFCCCC;
+    --lorange: #FFE5CC;
+    --lyellow: #FFE5CC;
+    --llime: #E5FFCC;
+    --lgreen: #CCFFCC;
+    --lcyan: #CCFFE5;
+    --lblue: #CCE5FF;
+    --lindigo: #CCCCFF;
+    --lpurple: #E5CCFF;
+    --lpink: #FFCCFF;
+    --lgrey: #E0E0E0;
+    --dred: #301010;
+    --dorange: #301510;
+    --dyellow: #302010;
+    --dlime: #203010;
+    --dgreen: #103010;
+    --dcyan: #103020;
+    --dblue: #102030;
+    --dindigo: #101030;
+    --dpurple: #201030;
+    --dpink: #301030;
+    --dgrey: #202020;
+    --scrollbar-track: #ddd;
+    --scrollbar-thumb: #888;
+    --scrollbar-thumb-hover: #555;
+}
+
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Quicksand;
+    font-weight: bold;
+}
+
+#row-col-nums{
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: repeat(11, 1fr);
+}
+#rows{
+    grid-row: 2/12;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+}
+#cols{
+    grid-row: 1/2;
+    grid-column: 2/12;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+#nums{
+    grid-row: 2/12;
+    grid-column: 2/12;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.product{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.product .value{
+    
+}
+#cepi{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+button{
+    cursor: pointer;
+    border: 1px dashed var(--dark-grey);
+    background-color: var(--my-black);
+    color: var(--lindigo);
+    outline: none;
+}
+button:hover{
+    background-color: var(--dindigo);
+}
