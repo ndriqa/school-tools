@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+:root {
+    --kotlin: #5533ff;
+    --my-black: #111;
+    --dark-grey: #303030;
+    --lred: #FFCCCC;
+    --lorange: #FFE5CC;
+    --lyellow: #FFE5CC;
+    --llime: #E5FFCC;
+    --lgreen: #CCFFCC;
+    --lcyan: #CCFFE5;
+    --lblue: #CCE5FF;
+    --lindigo: #CCCCFF;
+    --lpurple: #E5CCFF;
+    --lpink: #FFCCFF;
+    --lgrey: #E0E0E0;
+    --dred: #301010;
+    --dorange: #301510;
+    --dyellow: #302010;
+    --dlime: #203010;
+    --dgreen: #103010;
+    --dcyan: #103020;
+    --dblue: #102030;
+    --dindigo: #101030;
+    --dpurple: #201030;
+    --dpink: #301030;
+    --dgrey: #202020;
+    --scrollbar-track: #ddd;
+    --scrollbar-thumb: #888;
+    --scrollbar-thumb-hover: #555;
+}
+*{
+    padding: 10px;
+}
+#kalkulatori{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--lred);
+}
+#rez{
+    flex: 1;
+    width: 100%;
+    max-width: 220px;
+    text-align: right;
+    margin: 20px 20px;
+    border-radius: 30px;
+    border: 1px solid var(--lred);
+}
+.butonet{
+    flex: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.buton{
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--lyellow);
+    cursor: pointer;
+}
+.buton a{
+    text-decoration: none;
+    color: var(--lyellow);
+    font-weight: bold;
+}
+#barazim{
+    grid-column: 3/5;
+    border-color: var(--lred);
+    border-radius: 20px;
+}
+#mute a{
+    font-weight: lighter;
+
+}

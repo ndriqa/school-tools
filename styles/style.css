@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+:root {
+    --kotlin: #5533ff;
+    --my-black: #111;
+    --dark-grey: #303030;
+    --lred: #FFCCCC;
+    --lorange: #FFE5CC;
+    --lyellow: #FFE5CC;
+    --llime: #E5FFCC;
+    --lgreen: #CCFFCC;
+    --lcyan: #CCFFE5;
+    --lblue: #CCE5FF;
+    --lindigo: #CCCCFF;
+    --lpurple: #E5CCFF;
+    --lpink: #FFCCFF;
+    --lgrey: #E0E0E0;
+    --dred: #301010;
+    --dorange: #301510;
+    --dyellow: #302010;
+    --dlime: #203010;
+    --dgreen: #103010;
+    --dcyan: #103020;
+    --dblue: #102030;
+    --dindigo: #101030;
+    --dpurple: #201030;
+    --dpink: #301030;
+    --dgrey: #202020;
+    --scrollbar-track: #ddd;
+    --scrollbar-thumb: #888;
+    --scrollbar-thumb-hover: #555;
+}
+
+/*global level style*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html {
+    background-color: var(--dark-grey);
+    font-family: 'Quicksand', sans-serif;
+    color: var(--lgrey);
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 100px var(--my-black);
+}
+body{
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#logo{
+    text-align: center;
+}
+#logo a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--lred);
+}
+#links{
+    display: flex;
+    justify-content: space-around;
+}
+#links ul{
+    list-style: none;
+    text-decoration: none;
+}
+#links ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+#links ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--lred);
+}
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tool{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    margin: 20px;
+    position: relative;
+}
+.tool:hover{
+    transform: scale(1.1);
+}
+.tool img{
+    max-width: 100px;
+    margin: 10px 20px;
+}
+.tool .title{
+    color: var(--lgrey);
+}
+.tool a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 2;
+}

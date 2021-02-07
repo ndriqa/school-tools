@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+:root {
+    --kotlin: #5533ff;
+    --my-black: #111;
+    --dark-grey: #303030;
+    --lred: #FFCCCC;
+    --lorange: #FFE5CC;
+    --lyellow: #FFE5CC;
+    --llime: #E5FFCC;
+    --lgreen: #CCFFCC;
+    --lcyan: #CCFFE5;
+    --lblue: #CCE5FF;
+    --lindigo: #CCCCFF;
+    --lpurple: #E5CCFF;
+    --lpink: #FFCCFF;
+    --lgrey: #E0E0E0;
+    --dred: #301010;
+    --dorange: #301510;
+    --dyellow: #302010;
+    --dlime: #203010;
+    --dgreen: #103010;
+    --dcyan: #103020;
+    --dblue: #102030;
+    --dindigo: #101030;
+    --dpurple: #201030;
+    --dpink: #301030;
+    --dgrey: #202020;
+    --scrollbar-track: #ddd;
+    --scrollbar-thumb: #888;
+    --scrollbar-thumb-hover: #555;
+}
+
+*{
+    padding: 5px;
+    margin: 0;
+}
+
+button{
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--lred);
+    font-family: Quicksand;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    min-height: 40px;
+    border: none;
+}
+
+/*grand-container*/
+.wall{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 80%;
+}
+
+/*big-guys*/
+#tabela{
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    border: 10px solid black;
+    background-color: var(--dgreen);
+    box-shadow: 3px 3px 5px var(--my-black);
+    padding: 30px;
+}
+#info{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--dgreen);
+    box-shadow: 3px 3px 5px var(--my-black);
+    border: 5px solid black;
+    border-radius: 10px;
+    align-items: center;
+}
+
+/*kids*/
+#boshti-koordinativ{
+    flex: 4;
+    position: relative;
+    border: 1px solid var(--my-black);
+    border-radius: 10px;
+}
+#mundesite{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#brinjet{
+    flex: 1;
+    text-align: center;
+}
+#kendet{
+    flex: 1;
+    text-align: center;
+}
+
+/*misc*/
+.axis{
+    position: absolute;
+    border: 1px solid var(--lred);
+    padding: 0;
+}
+.x{
+    width: 100%;
+    height: 0;
+}
+.y{
+    height: 100%;
+    width: 0;
+}
+#a{
+    top: 10px;
+    left: 10px;
+}
+#b{
+    top: 50px;
+    left: 50px;
+}
+#c{
+    top: 50px;
+    left: 10px;
+}
+.pika{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--lorange);
+    position: absolute;
+    background-color: var(--lred);
+    z-index: 3;
+}
+.pika:hover{
+    cursor: pointer;
+    background-color: var(--dred);
+}
+#mundesite button {
+    margin-top: 10px;
+}
+#canvas{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+#info p {
+    display: inline;
+}
