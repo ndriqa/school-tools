@@ -6,4 +6,5 @@ Current repertoire:
   1. Calculator
   2. Triangle
   3. Multiplication table
+
 I make tools' icons (32x32px) using pixilart site.
